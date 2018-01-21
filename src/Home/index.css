@@ -25,7 +25,7 @@ body {
   font-weight: bold;
   text-align:left;
   margin: 0;
-  padding-left: 30px;
+  padding-left: 70px;
 }
 
 .App-title a {
@@ -36,14 +36,20 @@ body {
 }
 .App_content {
   background-color: #ffffff;
-  width: 95%;
+  width: 90%;
+  height: 87px;
   margin: 0 auto;
   margin-top: 15px;
+}
+.App_content div {
+  padding-top: 20px;
+  display: inline-block;
+  margin-left: 25px;
 }
 .App_content img {
   display: inline-block;
   width: 55px;
-  vertical-align: middle;
+  vertical-align: -7px;
 }
 .App_content .desc {
   display: inline-block;
@@ -53,12 +59,92 @@ body {
 .App_content .path {
   display: inline-block;
   margin: 0;
+  margin-top: 4px;
+  color: #c7254e;
+  background-color: #f9f2f4;
+  border-radius: 4px;
+  padding: 1px 12px;
 }
 .App_content a {
   text-decoration: none;
   color: #666;
 }
-
+.App .list_all {
+  width: 90%;
+  margin: 0 auto;
+}
+.App .list {
+  display: inline-block;
+  width: 23%;
+  height: 133px;
+  margin-top: 20px;
+  margin-right: 2.5%;
+  background-color: #ffffff;
+}
+.App .list i {
+  display: block;
+  width: 100%;
+  height: 100px;
+}
+.App .list p {
+  color: #666;
+  margin: 0;
+  width: 100%;
+  height: 33px;
+  text-align: left;
+  padding-left: 15px;
+  box-sizing: border-box;
+  line-height: 33px;
+  background: #F5F5F5;
+  border-top: 1px solid #E9E9E9;
+}
+.App .list:last-child {
+  margin-right: 0;
+}
+.App .details {
+  width: 90%;
+  margin: 20px auto;
+  background-color: #ffffff;
+}
+.App .details>p {
+  background-color: #fafafa;
+  color: #777;
+  margin: 0;
+  border-bottom-color: #eee;
+  height: 33px;
+  line-height: 33px;
+  text-align: left;
+  padding-left: 15px;
+}
+.App .details .detail_list {
+  display: inline-block;
+  text-align: left;
+  height: 70px;
+  padding-top: 12px;
+  padding-left: 15px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  width: 50%;
+}
+.App .details .detail_list img {
+  border-radius: 100%;
+  vertical-align: -5px;
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+}
+.App .details .detail_list>div {
+  display: inline-block;
+  margin-left: 15px;
+}
+.App .details .detail_list>div p {
+  margin: 0;
+}
+.App .details .detail_list>div p:last-child {
+  color: #777;
+  font-size: 14px;
+  margin-top: 2px;
+}
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
