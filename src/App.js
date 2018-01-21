@@ -1,19 +1,18 @@
-import React, { Component } from 'react';
-import './App.css';
-
-class App extends Component {
-  render() {
+import React,{Component} from 'react';
+import { BrowserRouter as Router,Route,Switch} from 'react-router-dom';
+import Home from './Home';
+import  List from './list';
+export default class App extends Component{
+  render(){
     return (
-      <div className="App">
-        <header className="App-header">
-          <h1 className="App-title">Ruby <span>China</span> <a href="#">社区</a></h1>
-        </header>
-        <p className="App-intro">
-
-        </p>
-      </div>
-    );
+    <Router>
+      <Switch>
+          <Route exact path='/' component={Home}/>
+          <Route path='/home' component={Home}/>
+          <Route path='/list' component={List}/>
+      </Switch>
+    </Router>
+    )
   }
 }
 
-export default App;
