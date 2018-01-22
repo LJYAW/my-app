@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 import './index.css';
+import './iconfont.css';
+import './iconfont.js';
+import './iconfont.svg'
 export default class Home extends Component {
   render() {
     return (
@@ -17,10 +20,10 @@ export default class Home extends Component {
           </div>
         </div>
         <div className="list_all">
-          <div class="list"><i class="fa fa-comments-o"></i><p>Ruby 社区 </p></div>
-          <div class="list"><i class="fa fa-comments-o" aria-hidden="true"></i><p>技术文档 </p></div>
-          <div class="list"><i class="fa fa-comments-o" aria-hidden="true"></i><p>招聘与求职 </p></div>
-          <div class="list"><i class="fa fa-comments-o" aria-hidden="true"></i><p>精华文章 </p></div>
+          <div className="list"><i className="fa fa-comments-o"></i><p>Ruby 社区 </p></div>
+          <div className="list"><i className="fa fa-comments-o" aria-hidden="true"></i><p>技术文档 </p></div>
+          <div className="list"><i className="fa fa-comments-o" aria-hidden="true"></i><p>招聘与求职 </p></div>
+          <div className="list"><i className="fa fa-comments-o" aria-hidden="true"></i><p>精华文章 </p></div>
         </div>
         <div className="details">
           <p>社区精华帖</p>
